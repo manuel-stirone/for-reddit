@@ -21,16 +21,9 @@ export default function Home({
   return (
     <div className="flex min-h-screen items-center justify-center font-sans bg-white dark:bg-[#0a0a0a] text-black dark:text-white transition-colors duration-500">
       <main className="max-w-3xl text-center space-y-10">
-        <h1 className="text-6xl font-semibold">ciao</h1>
-        <Button>Button 1</Button>
-        <LocaleSwitcher2 />
-        <Button variant="secondary">Button 2</Button>
-        <h1 className="text-6xl font-semibold">ciao</h1>
         <LocaleSwitcher2 />
         <h1 className="text-6xl font-semibold">{t("heroSubtitle")}</h1>
-        <LocaleSwitcher2 />
       </main>
-      <ThemeToggle />
     </div>
   );
 }
