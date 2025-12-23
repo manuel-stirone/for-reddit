@@ -167,8 +167,8 @@ export default function LocaleSwitcher() {
           className={`${styles.localeIcon} ${
             isOpen ? styles.localeIconOpen : ""
           }`}
-          width="12"
-          height="8"
+          width="11"
+          height="6"
           viewBox="0 0 12 8"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

@@ -6,6 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { use } from "react";
 import { setRequestLocale } from "next-intl/server";
 import LocaleSwitcher from "@/components/LocaleSwitcher/LocaleSwitcher";
+import LocaleSwitcher2 from "@/components/LocaleSwitcher/LocaleSwitcher2";
 
 export default function Home({
   params,
@@ -22,26 +23,12 @@ export default function Home({
       <main className="max-w-3xl text-center space-y-10">
         <h1 className="text-6xl font-semibold">ciao</h1>
         <Button>Button 1</Button>
+        <LocaleSwitcher2 />
         <Button variant="secondary">Button 2</Button>
         <h1 className="text-6xl font-semibold">ciao</h1>
+        <LocaleSwitcher2 />
         <h1 className="text-6xl font-semibold">{t("heroSubtitle")}</h1>
-        <h1 className="text-6xl font-semibold">ciao</h1>
-        <h1 className="text-6xl font-semibold">ciao</h1>
-        <h1 className="text-6xl font-semibold">ciao</h1>
-        <h1 className="text-6xl font-semibold">ciao</h1>
-        <h1 className="text-6xl font-semibold">ciao</h1>
-        <h1 className="text-6xl font-semibold">ciao</h1>
-        <h1 className="text-6xl font-semibold">ciao</h1>
-        <h1 className="text-6xl font-semibold">ciao</h1>
-        <h1 className="text-6xl font-semibold">ciao</h1>
-        <h1 className="text-6xl font-semibold">ciao</h1>
-        <h1 className="text-6xl font-semibold">ciao</h1>
-        <h1 className="text-6xl font-semibold">ciao</h1>
-        <h1 className="text-6xl font-semibold">ciao</h1>
-        <h1 className="text-6xl font-semibold">ciao</h1>
-        <h1 className="text-6xl font-semibold">ciao</h1>
-        <h1 className="text-6xl font-semibold">ciao</h1>
-        <h1 className="text-6xl font-semibold">ciao</h1>
+        <LocaleSwitcher2 />
       </main>
       <ThemeToggle />
     </div>

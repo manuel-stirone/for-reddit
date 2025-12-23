@@ -116,34 +116,60 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  /* ... your existing theme config ... */
+}
+
+/* CRITICAL: Force immediate background colors */
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  /* ... rest of your root variables ... */
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  /* ... rest of your dark variables ... */
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
 
-  /* 1. Force the background to be instant on the html tag */
+  /* CRITICAL: Force instant background */
   html {
-    background-color: var(--background);
-    color: var(--foreground);
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    transition: none !important;
+  }
+
+  html.dark {
+    background-color: #0a0a0a !important;
+    color: #ffffff !important;
+    transition: none !important;
   }
 
   body {
     @apply bg-background text-foreground;
-    /* 2. REMOVE any transition: all or transition-colors from here */
+    transition: none !important;
   }
 }
 
-/* 3. This is a helper class next-themes uses to prevent flickers.
-      We ensure it stops ALL transitions during the switch. */
+/* Prevent ALL transitions during theme changes */
 .next-themes-notransition,
 .next-themes-notransition *,
 .next-themes-notransition *:before,
-.next-themes-notransition *:after {
+.next-themes-notransition *:after,
+html,
+html *,
+body,
+body * {
   transition: none !important;
   transition-duration: 0s !important;
-}
-
-:root,
-.dark {
-  transition: background-color 0s, color 0s !important;
+  animation-duration: 0s !important;
 }

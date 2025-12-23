@@ -13,8 +13,8 @@
 .localeButton {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 11px 12px;
+  gap: 4px;
+  padding: 6px 6px;
   /* background-color: #ffffff; */
   border: 1px solid #ffffff;
   border-radius: 8px;
@@ -24,7 +24,7 @@
   cursor: pointer;
   transition: all 0.2s ease;
   min-width: 70px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .localeButton:hover {

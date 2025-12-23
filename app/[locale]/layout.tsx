@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { navLinks } from "@/config/dock-config";
 import { NavbarDemo } from "@/components/navbar";
-import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeProvider } from "next-themes";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
@@ -34,64 +35,12 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-      (function() {
-        try {
-          // Add no-transitions class immediately
-          document.documentElement.classList.add('no-transitions');
-          
-          // Read theme from cookie
-          const cookies = document.cookie.split(';');
-          let theme = null;
-          for (const cookie of cookies) {
-            const [name, value] = cookie.trim().split('=');
-            if (name === 'theme') {
-              theme = value;
-              break;
-            }
-          }
-          
-          // Fallback to localStorage
-          if (!theme) {
-            theme = localStorage.getItem('theme');
-          }
-          
-          // Apply theme
-          const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-          const appliedTheme = !theme || theme === 'system' ? systemTheme : theme;
-          
-          if (appliedTheme === 'dark') {
-            document.documentElement.classList.add('dark');
-          } else {
-            document.documentElement.classList.remove('dark');
-          }
-          document.documentElement.style.colorScheme = appliedTheme;
-          
-          // Save to cookie
-          if (theme) {
-            document.cookie = 'theme=' + theme + '; path=/; max-age=31536000; SameSite=Lax';
-          }
-          
-          // Remove no-transitions after theme is applied
-          setTimeout(() => {
-            document.documentElement.classList.remove('no-transitions');
-          }, 100);
-        } catch (e) {}
-      })();
-    `,
-          }}
-        />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning
@@ -101,7 +50,6 @@ export default async function RootLayout({
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-          storageKey="theme"
         >
           <NextIntlClientProvider locale={locale}>
             <NavbarDemo />
