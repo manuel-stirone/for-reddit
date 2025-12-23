@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { use } from "react";
 import { setRequestLocale } from "next-intl/server";
-import LocaleSwitcher from "@/components/LocaleSwitcher/LocaleSwitcher";
+import LocaleSwitcher from "@/components/LocaleSwitcher/[OUTDATED-UNUSED]/LocaleSwitcher";
 import LocaleSwitcher2 from "@/components/LocaleSwitcher/LocaleSwitcher2";
 
 export default function Home({

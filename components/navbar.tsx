@@ -13,7 +13,7 @@ import {
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import LocaleSwitcher from "@/components/LocaleSwitcher/LocaleSwitcher";
+import LocaleSwitcher from "@/components/LocaleSwitcher/[OUTDATED-UNUSED]/LocaleSwitcher";
 
 export function NavbarDemo() {
   const navItems = [
