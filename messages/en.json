@@ -1,0 +1,30 @@
+{
+  "home": {
+    "heroSubtitle": "Designing automations that boosts your company's productivity"
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "contacts": "Contacts",
+    "services": "Services",
+    "insights": "Insights"
+  },
+  "about": {
+    "paragraph1": "My story begins in Genoa in 1995, in a city that played a fundamental role in shaping my character and the person I am today.",
+    "paragraph2": "I grew up between Genoa and Cilento, two places and environments that are extremely different yet connected by an element that has always been central in my life: the sea. Over time, the sea has become a sort of best friend and a constant point of reference. Spending hours in the water, swimming without checking the time, or going out on a SUP are habits that have always been part of me and still represent my favorite way to relax and enjoy myself.",
+    "paragraph3": "At the same time, from a very young age, I developed a strong interest in technology. I still remember playing Solitaire on Windows 98 with my grandfather, and just a few years later figuring out how to install Windows XP on my own. From that moment on, computer science and programming became an essential part of my journey, because they allow me to express my curiosity.",
+    "paragraph4": "I love understanding how things work, diving deeper, staying up to date, and learning continuously. It’s a natural approach for me, something that defines the way I think and that continues to guide both my personal and professional growth.",
+    "paragraph5": "I consider myself a determined and extremely honest person — sometimes maybe a bit too much, falling into what I call “being brutally honest.” Not in an offensive way, but simply because I don’t hide what I think and I’m always ready to express it respectfully and transparently, yet without sugarcoating it.",
+    "paragraph6": "When I commit to something, I tend to give more than what’s required. Not out of obligation, but because it’s my natural way of facing challenges and constantly pushing myself to improve."
+  },
+  "chat": {
+    "title": "Client Assistant",
+    "subtitle": "sono ita",
+    "footer": "footer",
+    "getStarted": "",
+    "inputPlaceholder": "Start the chat by typing here.",
+    "closeButtonTooltip": "",
+    "initial1": "Hey, I am Tom! 😀",
+    "initial2": "How can I help you?"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "home": {
+    "heroSubtitle": "Progetto automazioni su misura per far crescere la produttività del tuo team"
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "Chi Sono",
+    "contacts": "Contatti",
+    "services": "Servizi",
+    "insights": "Insights"
+  },
+
+  "about": {
+    "paragraph1": "La mia storia inizia a Genova, nel 1995, in una città che ha avuto un ruolo fondamentale nel definire definire il mio carattere e il mio modo di essere.",
+    "paragraph2": "Sono cresciuto tra Genova e il Cilento, due luoghi e realtà estremamente diverse ma legate da un elemento che è sempre stato centrale nella mia vita: il mare. Con il tempo, il mare è diventato un po' il mio migliore amico e il mio punto di riferimento. Passare ore in acqua, nuotare senza guardare l’orologio o uscire in SUP sono abitudini che mi accompagnano da sempre e che ancora oggi rappresentano il mio modo preferito di rilassarmi e divertirmi.",
+    "paragraph3": "Parallelamente, fin da giovane ho sviluppato un forte interesse per la tecnologia. Ricordo ancora quando, da bambino, giocavo a Solitario su Windows 98 con mio nonno e, pochi anni dopo, mi impegnavo da solo per installare Windows XP. Da lì in poi, l’informatica e la programmazione sono diventate parte integrante del mio percorso, perché mi permettono di dare spazio alla mia curiosità.",
+    "paragraph4": "Amo capire come funzionano le cose, approfondire, restare aggiornato e imparare continuamente. È un approccio naturale per me, qualcosa che fa parte del mio modo di essere e che continua a guidare la mia crescita personale e professionale.",
+    "paragraph5": "Mi definisco una persona determinata ed estremamente onesta, a volte forse un po' troppo, finendo in quello che chiamo “essere brutalmente onesti”. Non in senso offensivo, ma semplicemente perché non nascondo ciò che penso e sono sempre pronto a comunicarlo nel modo più rispettoso e trasparente possibile, ma senza peli sulla lingua.",
+    "paragraph6": "Quando decido di dedicarmi a qualcosa, tendo a dare più del necessario. Non per obbligo, ma perché è il mio modo naturale di affrontare le sfide e un modo per mettermi costantemente alla prova."
+  },
+  "chat": {
+    "title": "Assistenza Clienti",
+    "subtitle": "sono ita",
+    "footer": "footer",
+    "getStarted": "",
+    "inputPlaceholder": "Scrivi qui per avviare la chat.",
+    "closeButtonTooltip": "sono ita",
+    "initial1": "Ciao, sono l'Assistente Tom! 😀",
+    "initial2": "Come posso esserti utile? Hai qualche domanda?"
+  }
+}
